@@ -1,3 +1,4 @@
+import React from "react";
 import PlusSvg from "./PlusSvg";
 
 const SectionSvg = ({ crossesOffset }) => {
