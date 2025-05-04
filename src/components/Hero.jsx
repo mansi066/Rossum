@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { curve, heroBackground } from '../assets';
+import { curve, heroBackground ,collage} from '../assets';
 import Button from './Button';
 import Section from './Section';
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
@@ -22,7 +22,6 @@ const Hero = () => {
           <h1 className="h1 mb-6">
             Decoding the Future, One Byte at a Time with
             {` `}
-            <br />
             <span className="inline-block relative">
               Rossum {" "}
               <img
@@ -44,11 +43,11 @@ const Hero = () => {
         <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
           <div className="relative bg-n-8 rounded-[1rem]">
             <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
-            <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
+            <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[250/100] lg:aspect-[688/490]">
               <img
-                src="#"
-                className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:translate-y-[10%] lg:-translate-y-[23%]"
-                width={1024}
+                src={collage}
+                className="w-full scale-[1.0] translate-y-[1%] md:scale-[1] md:translate-y-[2%] lg:-translate-y-[5%]"
+                width={688}
                 height={490}
                 alt="coding-hub"
               />

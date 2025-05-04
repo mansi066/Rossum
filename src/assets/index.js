@@ -20,6 +20,8 @@ import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
 import heroBackground from "./hero/hero-background.jpg";
+import collage from "./hero/collage.jpg";
+
 
 
 
@@ -65,7 +67,7 @@ export {
   curve,
   
   heroBackground,
- 
+ collage,
   
   
   notification1,
