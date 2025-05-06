@@ -62,9 +62,9 @@ const Footer = () => {
           <h3 className="text-md font-semibold text-purple-600">RESOURCES</h3>
           <ul className="space-y-2">
             <li><a href="/blog" className="hover:underline">Blog</a></li>
-            <li><a href="/tutorials" className="hover:underline">Tutorials</a></li>
-            <li><a href="/guides" className="hover:underline">Guides</a></li>
-            <li><a href="/tools" className="hover:underline">Tools & Downloads</a></li>
+            <li><a href="/tutorials" className="hover:underline">Event</a></li>
+            <li><a href="/guides" className="hover:underline">Project</a></li>
+            <li><a href="/tools" className="hover:underline">Resources</a></li>
           </ul>
         </div>
 
