@@ -22,7 +22,8 @@ import curve from "./hero/curve.png";
 import heroBackground from "./hero/hero-background.jpg";
 import collage from "./hero/collage.jpg";
 
-
+import lines from "./Team/lines.svg";
+import stars from "./Team/stars.svg";
 
 
 import notification1 from "./notification/image-1.png";
@@ -65,7 +66,8 @@ export {
   loading,
   background,
   curve,
-  
+  lines,
+  stars,
   heroBackground,
  collage,
   

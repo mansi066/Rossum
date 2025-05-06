@@ -4,7 +4,7 @@ import { curve } from '../assets';
 
 const About = () => {
   return (
-    <Section className="bg-black-500 text-white py-16 px-8 flex justify-center">
+    <Section className="bg-black-500 text-white py-16 px-8 flex justify-center"  id="about">
       <div className="relative p-6 rounded-xl shadow-lg border border-purple-800 bg-">
         <div className="p-6 rounded-lg">
           <h1 className="h1 mb-6 text-center">

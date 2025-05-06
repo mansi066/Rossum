@@ -15,7 +15,7 @@ const Hero = () => {
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
-      id="hero"
+      id="home"
     >
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.85rem] md:mb-20 lg:mb-[6.25rem]">
@@ -37,20 +37,20 @@ const Hero = () => {
             Where curiosity meets code, and collaboration fuels growth.
             Join Rossum, your gateway to endless possibilities.
           </p>
-          <Button href="/" white>Join</Button>
+          <Button href="../" white>Learn More</Button>
         </div>
 
         <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
           <div className="relative bg-n-8 rounded-[1rem]">
             <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
             <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[250/100] lg:aspect-[688/490]">
-              <img
-                src={collage}
-                className="w-full scale-[1.0] translate-y-[1%] md:scale-[1] md:translate-y-[2%] lg:-translate-y-[5%]"
-                width={688}
-                height={490}
-                alt="coding-hub"
-              />
+            <img
+            src={collage}
+            className="w-full mx-auto block scale-[2] translate-y-[1%] md:scale-[1] md:translate-y-[2%] lg:-translate-y-[5%]"
+            width={688}
+            height={490}
+            alt="coding-hub"
+            />
               <ScrollParallax isAbsolutelyPositioned>
                   <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
                     {heroIcons.map((icon, index) => (
