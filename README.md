@@ -64,9 +64,9 @@ We welcome contributions from **Coding Hub official students** and any enthusias
 
 ##  Code of Conduct  
 To maintain a healthy coding environment, contributors must:  
-✅ Provide **helpful feedback** during code reviews  
+✅ Provide **helpful feedback** during code reviews.
 ✅ Avoid plagiarism—write **original, innovative code**  
-✅ Report **bugs & issues** responsibly  
+✅ Report **bugs & issues** responsibly
 
 
 🔗 GitHub Issues: [Submit an Issue](https://github.com/mansi066/Rossum/issues)  
