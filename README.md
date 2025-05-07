@@ -71,5 +71,22 @@ To maintain a healthy coding environment, contributors must:
 
 🔗 GitHub Issues: [Submit an Issue](https://github.com/mansi066/Rossum/issues)  
 
+
+## Guidelines For Contribution
+
+Please follow these guidelines to help maintain the quality and organization of the project. This ensures that contributions and issues are effectively tracked, addressed, and resolved.
+
+### 1. Create an Issue (Use the Template Provided)
+- When creating an issue, kindly provide a description of how you plan to implement the solution.
+- **Make sure the issue has not been raised by someone else!**
+- If you raise a duplicate issue, it will be **closed**.
+- Review issues raised by other contributors before raising your own to avoid confusion related to duplicate issues. For example, if someone is working on the Navbar UI and you want to add a hover effect to navbar items, understand that this falls under the existing Navbar UI issue.
+
+### 2. Guidelines for opening an Issue
+1. **Search for Existing Issues**  
+   Before opening a new issue, search the repository to check if the issue already exists. If you find a similar or the same issue, comment on the existing issue and ask to be assigned to it instead of opening a new one.
+
+
+
 ---
 
