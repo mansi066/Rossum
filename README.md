@@ -50,13 +50,13 @@ Now you're all set to start contributing!
 ## Contributing Guidelines  
 We welcome contributions from **Coding Hub official students** and any enthusiasts eager to enhance the project.
 
-### **🔹 How to Contribute?**  
+### **How to Contribute?**  
 1. **Fork** the repository  
 2. **Create a branch** for your changes  
 3. **Make improvements** and ensure they follow best coding practices  
 4. **Submit a pull request (PR)**  
 
-### ** Contribution Rules**  
+### **Contribution Rules**  
 - Follow **proper code indentation** & **naming conventions**  
 - **Write clear, meaningful commit messages**  
 - Keep components **modular & reusable**  
