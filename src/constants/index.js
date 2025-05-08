@@ -51,18 +51,7 @@ export const navigation = [
     title: "Contact Us",
     url: "#contact-us",
   },
-  {
-    id: "5",
-    title: "New account",
-    url: "#signup",
-    onlyMobile: true,
-  },
-  {
-    id: "6",
-    title: "Sign in",
-    url: "#login",
-    onlyMobile: true,
-  },
+  
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];

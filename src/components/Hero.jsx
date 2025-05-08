@@ -46,7 +46,7 @@ const Hero = () => {
             <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[250/100] lg:aspect-[688/490]">
             <img
             src={collage}
-            className="w-full mx-auto block scale-[2] translate-y-[1%] md:scale-[1] md:translate-y-[2%] lg:-translate-y-[5%]"
+            className="w-[50%] mt-[8.5rem] mx-auto block scale-[2] translate-y-[1%] md:scale-[1] md:translate-y-[2%] lg:-translate-y-[5%] lg:w-full lg:mt-[2rem]"
             width={688}
             height={490}
             alt="coding-hub"

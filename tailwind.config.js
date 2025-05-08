@@ -74,6 +74,7 @@ export default {
     },
   },
   plugins: [
+    require("tailwind-scrollbar"),
     plugin(function ({ addBase, addComponents, addUtilities }) {
       addBase({});
       addComponents({
@@ -126,6 +127,9 @@ export default {
         ".tap-highlight-color": {
           "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
         },
+        ".scrollbar-thin": { "scrollbar-width": "thin" },
+        ".scrollbar-thumb-rounded": { "scrollbar-color": "#6b21a8 #222" },
+
       });
     }),
   ],

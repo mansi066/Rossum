@@ -13,73 +13,82 @@
   color-scheme: dark;
 }
 
-
-
+/* Smooth scrolling */
 * {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
-
-.rotate-45 {
-  @apply rotate-[45deg]
+/* Custom Vertical Scrollbar */
+.custom-scrollbar {
+  @apply overflow-y-auto h-screen; /* Enables vertical scrolling */
 }
 
-.rotate-90 {
-  @apply rotate-[90deg]
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px; /* Vertical scrollbar width */
 }
 
-.rotate-135 {
-  @apply rotate-[135deg]
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-gray-900; /* Dark track background */
+  border-radius: 6px;
 }
 
-.rotate-180 {
-  @apply rotate-[180deg]
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #8a2be2, #ff0080); /* Gradient effect */
+  border-radius: 6px;
 }
 
-.rotate-225 {
-  @apply rotate-[225deg]
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #5a189a, #d63384); /* Darker gradient on hover */
 }
 
-.rotate-270 {
-  @apply rotate-[270deg]
-}
-
-.rotate-315 {
-  @apply rotate-[315deg]
-}
-
-.rotate-360 {
-  @apply rotate-[360deg]
-}
-
-.-rotate-45 {
-  @apply rotate-[-45deg]
-}
-
-.-rotate-90 {
-  @apply rotate-[-90deg]
-}
-
-.-rotate-135 {
-  @apply rotate-[-135deg]
-}
-
-.-rotate-180 {
-  @apply rotate-[-180deg]
-}
-
-.-rotate-225 {
-  @apply rotate-[-225deg]
-}
-
-.-rotate-270 {
-  @apply rotate-[-270deg]
-}
-
-.-rotate-315 {
-  @apply rotate-[-315deg]
-}
-
-.-rotate-360 {
-  @apply rotate-[-360deg]
+/* Rotation Utilities */
+@layer utilities {
+  .rotate-45 {
+    @apply rotate-[45deg];
+  }
+  .rotate-90 {
+    @apply rotate-[90deg];
+  }
+  .rotate-135 {
+    @apply rotate-[135deg];
+  }
+  .rotate-180 {
+    @apply rotate-[180deg];
+  }
+  .rotate-225 {
+    @apply rotate-[225deg];
+  }
+  .rotate-270 {
+    @apply rotate-[270deg];
+  }
+  .rotate-315 {
+    @apply rotate-[315deg];
+  }
+  .rotate-360 {
+    @apply rotate-[360deg];
+  }
+  .-rotate-45 {
+    @apply rotate-[-45deg];
+  }
+  .-rotate-90 {
+    @apply rotate-[-90deg];
+  }
+  .-rotate-135 {
+    @apply rotate-[-135deg];
+  }
+  .-rotate-180 {
+    @apply rotate-[-180deg];
+  }
+  .-rotate-225 {
+    @apply rotate-[-225deg];
+  }
+  .-rotate-270 {
+    @apply rotate-[-270deg];
+  }
+  .-rotate-315 {
+    @apply rotate-[-315deg];
+  }
+  .-rotate-360 {
+    @apply rotate-[-360deg];
+  }
 }
