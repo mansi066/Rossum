@@ -8,7 +8,7 @@ const OurTeamList = () => {
         <div 
           key={member.id} 
           className="bg-black p-6 rounded-lg text-center 
-                     w-full sm:w-[30%] md:w-[20%] lg:w-[15%] xl:w-[10%]
+                     w-[80%] sm:w-[30%] md:w-[20%] lg:w-[15%] xl:w-[10%]
                      border-2 border-purple-500 shadow-md shadow-purple-500"
         >
           <img 

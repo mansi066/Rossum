@@ -7,23 +7,7 @@ import Button from "./Button";
 const Footer = () => {
   return (
     <Section crosses className="!px-0 !py-10 bg-n-8 text-white">
-      {/* Newsletter Subscription */}
-      <div className="flex flex-col items-center text-center mb-10">
-        <h1 className="text-2xl font-bold  text-purple-600">SUBSCRIBE TO OUR NEWSLETTER</h1>
-        <p className="text-sm">Stay updated with our latest events and announcements.</p>
-        <form action="/subscribe" method="post" className="mt-4 w-full max-w-md">
-        <input
-  type="email"
-  name="email"
-  placeholder="Enter your email"
-  className="p-2 rounded w-full max-w-[70%] sm:w-[70%] text-white bg-neutral-900"
-/>
-  <br />
-  <Button className="mt-4 w-[30%] text-center justify-center mx-auto flex" href="#login">
-    Subscribe
-</Button>
-</form>
-</div>
+     
 
       <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center sm:text-left">
         {/* About Section */}
@@ -57,7 +41,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Resources Section */}
+        {/* Resources Section
         <div>
           <h3 className="text-md font-semibold text-purple-600">RESOURCES</h3>
           <ul className="space-y-2">
@@ -66,7 +50,7 @@ const Footer = () => {
             <li><a href="/guides" className="hover:underline">Project</a></li>
             <li><a href="/tools" className="hover:underline">Resources</a></li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Community Section */}
         <div>
@@ -78,6 +62,25 @@ const Footer = () => {
             <li><a href="/code-of-conduct" className="hover:underline">Code of Conduct</a></li>
           </ul>
         </div>
+
+ {/* Newsletter Subscription */}
+ <div className="flex flex-col items-center text-center mb-10">
+        <h1 className="text-2xl font-bold  text-purple-600">SUBSCRIBE TO OUR NEWSLETTER</h1>
+        <p className="text-sm">Stay updated with our latest events and announcements.</p>
+        <form action="/subscribe" method="post" className="mt-4 w-full max-w-md">
+        <input
+  type="email"
+  name="email"
+  placeholder="Enter your email"
+  className="p-2 rounded w-full max-w-[70%] sm:w-[70%] text-white bg-neutral-900"
+/>
+  <br />
+  <Button className="mt-4 w-[40%] text-center justify-center mx-auto flex" href="#login">
+    Subscribe
+</Button>
+</form>
+</div>
+
       </div>
 
       <h3 className="text-xl font-semibold text-purple-600 text-center">Connect with Us</h3>

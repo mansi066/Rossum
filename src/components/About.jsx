@@ -10,7 +10,7 @@ const About = () => {
           <h1 className="h1 mb-6 text-center">
             <span className="inline-block relative"> 
               About Us {" "}
-              <img src={curve} className="absolute top-full left-0 w-full xl:-mt-2" width={624} height={28} alt="Curve" />
+              {/* <img src={curve} className="absolute top-full left-0 w-full xl:-mt-2" width={624} height={28} alt="Curve" /> */}
             </span>
           </h1>
           <p className="text-lg max-w-3xl mx-auto leading-relaxed">
