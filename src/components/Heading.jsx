@@ -3,11 +3,11 @@ import { curve } from '../assets';
 
 const Heading = ({ className, title,subtitle }) => {
   return (
-    <div className={`${className} max-w-[50rem] mx-auto mb-12 lg:mb-20 flex flex-col items-center`}>
+    <div className={`${className} max-w-[20rem] lg:max-w-[50rem] mx-auto mb-12 lg:mb-20 flex flex-col items-center`}>
       {title && <h2 className="h1 text-center">{title}
-         <img
+         <img   className='lg:w-[300px]'
                         src={curve}
-                        width={300}
+                        width={195}
                         height={10}
                         alt="Curve"
                       />
