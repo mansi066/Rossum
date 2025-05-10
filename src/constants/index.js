@@ -89,13 +89,13 @@ export const events = [
     
     light: true,
   },
-  {
-    id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
+  // {
+  //   id: "2",
+  //   title: "Connect everywhere",
+  //   text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+  //   backgroundUrl: "./src/assets/benefits/card-3.svg",
     
-  },
+  // },
   // {
   //   id: "3",
   //   title: "Fast responding",
