@@ -56,6 +56,23 @@ export const navigation = [
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
+ export const slides = [
+  {
+    url: './src/assets/Photo1.jpg',
+  },
+  {
+    url: './src/assets/Photo2.jpg',
+  },
+  {
+    url:  './src/assets/Photo3.jpg',
+  },
+
+  {
+    url:  './src/assets/Photo4.jpg',
+  },
+ 
+];
+
 export const events = [
   {
     id: "0",
@@ -72,13 +89,13 @@ export const events = [
     
     light: true,
   },
-  // {
-  //   id: "2",
-  //   title: "Connect everywhere",
-  //   text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
-  //   backgroundUrl: "./src/assets/benefits/card-3.svg",
+  {
+    id: "2",
+    title: "Connect everywhere",
+    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    backgroundUrl: "./src/assets/benefits/card-3.svg",
     
-  // },
+  },
   // {
   //   id: "3",
   //   title: "Fast responding",

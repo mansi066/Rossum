@@ -13,32 +13,30 @@
   color-scheme: dark;
 }
 
-/* Smooth scrolling */
 * {
   scroll-behavior: smooth;
 }
 
-/* Custom Vertical Scrollbar */
 .custom-scrollbar {
-  @apply overflow-y-auto h-screen; /* Enables vertical scrolling */
+  @apply overflow-y-auto ; 
 }
 
 .custom-scrollbar::-webkit-scrollbar {
-  width: 10px; /* Vertical scrollbar width */
+  width: 10px; 
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  @apply bg-gray-900; /* Dark track background */
+  @apply bg-gray-900; 
   border-radius: 6px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #8a2be2, #ff0080); /* Gradient effect */
+  background: linear-gradient(135deg, #8a2be2, #ff0080); 
   border-radius: 6px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #5a189a, #d63384); /* Darker gradient on hover */
+  background: linear-gradient(135deg, #5a189a, #d63384); 
 }
 
 /* Rotation Utilities */

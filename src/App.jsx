@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
       
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-y-auto h-screen custom-scrollbar">
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-y-auto">
         <Header />
         <Hero />
         <About />
