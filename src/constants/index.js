@@ -8,21 +8,14 @@ import {
   file02,
   homeSmile,
   instagram,
-  notification2,
-  notification3,
-  notification4,
   
   plusSquare,
-  
-  recording01,
-  recording03,
-  
-  
+ 
   searchMd,
-  sliders04,
+
   telegram,
   twitter,
-  yourlogo,
+
 } from "../assets";
 
 export const navigation = [

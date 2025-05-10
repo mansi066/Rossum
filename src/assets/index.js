@@ -16,6 +16,10 @@ import disc02 from "./disc-02.svg";
 import chromecast from "./chrome-cast.svg";
 import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
+import Photo1  from "./Photo1.jpg";
+import Photo2  from "./Photo2.jpg";
+import Photo3  from "./Photo3.jpg";
+import Photo4  from "./Photo4.jpg";
 import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
@@ -64,6 +68,10 @@ export {
   chromecast,
   sliders04,
   loading,
+  Photo1,
+  Photo2,
+  Photo3,
+  Photo4,
   background,
   curve,
   lines,
