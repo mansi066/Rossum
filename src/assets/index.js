@@ -16,10 +16,6 @@ import disc02 from "./disc-02.svg";
 import chromecast from "./chrome-cast.svg";
 import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
-import Photo1  from "./Photo1.jpg";
-import Photo2  from "./Photo2.jpg";
-import Photo3  from "./Photo3.jpg";
-import Photo4  from "./Photo4.jpg";
 import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
@@ -28,6 +24,10 @@ import collage from "./hero/collage.jpg";
 
 import lines from "./Team/lines.svg";
 import stars from "./Team/stars.svg";
+import Photo1 from "./Team/Photo1.jpg";
+import Photo2 from "./Team/Photo2.jpg";
+import Photo3 from "./Team/Photo3.jpg";
+import Photo4 from "./Team/Photo4.jpg";
 
 
 import notification1 from "./notification/image-1.png";

@@ -17,6 +17,10 @@ import {
   twitter,
 
 } from "../assets";
+import Photo1 from "../assets/Team/Photo1.jpg";
+import Photo2 from "../assets/Team/Photo2.jpg";
+import Photo3 from "../assets/Team/Photo3.jpg";
+import Photo4 from "../assets/Team/Photo4.jpg";
 
 export const navigation = [
   {
@@ -51,19 +55,17 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
  export const slides = [
   {
-    url: './src/assets/Photo1.jpg',
+    url: Photo1,
   },
   {
-    url: './src/assets/Photo2.jpg',
+    url: Photo2,
   },
   {
-    url:  './src/assets/Photo3.jpg',
+    url: Photo3,
   },
-
   {
-    url:  './src/assets/Photo4.jpg',
+    url: Photo4,
   },
- 
 ];
 
 export const events = [
