@@ -41,12 +41,18 @@ const Hero = () => {
           <Button href="../" white>Join Us</Button>
         </div>
 
-        <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
-          <div className="relative bg-n-8 rounded-[1rem]">
-            <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
-            <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[250/100] lg:aspect-[688/490]">
-              <div className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group">
-                <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className="w-full h-full rounded-2xl bg-center bg-cover duration-500"></div>
+       
+
+  <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
+  <div className="relative bg-n-8 rounded-[1rem]">
+    <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
+    <div className="rounded-b-[0.9rem] overflow-hidden flex justify-center items-center">
+      <div className="max-w-[1400px] w-full m-auto py-16 px-4 relative">
+        <div
+          style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+          className="w-full h-full bg-center bg-cover rounded-2xl duration-500 aspect-[16/9] md:aspect-[4/3] lg:aspect-[3/2]"
+        ></div>
+   
 
                 {/* Left Arrow */}
                 <div className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
