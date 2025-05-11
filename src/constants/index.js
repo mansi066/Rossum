@@ -151,7 +151,7 @@ export const team = [
   },
 
   {
-    id: "3",
+    id: "2",
     url: RahulKumarGupta, 
     name: "Rahul Kumar Gupta",
     role: "Faculty",
@@ -159,19 +159,19 @@ export const team = [
  
  
   {
-    id: "4",
+    id: "3",
     url: IshaGarg, 
     name: "Isha Garg",
     role: "Secretary",
   },
   {
-    id: "5",
+    id: "4",
     url: Devojeet, 
     name: "Devojeet",
     role: "Joint-Secretary",
   },
    {
-    id: "2",
+    id: "5",
     url: NamanKaushik, 
     name: "Naman Kaushik",
     role: "Member",
@@ -179,20 +179,20 @@ export const team = [
  
   
   {
-    id: "5",
+    id: "6",
     url: Mansi, 
     name: "Mansi",
     role: "Member",
   },
   {
-    id: "6",
+    id: "7",
     url: AdityaSaha, 
     name: "Aditya Saha",
     role: "Member",
   },
  
    {
-    id: "2",
+    id: "8",
     url: NamanPriyaSharma, 
     name: "Naman Priya Sharma",
     role: "Member",
@@ -200,14 +200,14 @@ export const team = [
  
 
    {
-    id: "2",
+    id: "9",
     url: IshikaGoyal, 
     name: "Ishika Goyal",
     role: "Member",
   },
 
   {
-    id: "8",
+    id: "10",
     url: YashSharma, 
     name: "Yash Sharma",
     role: "Member",
@@ -215,46 +215,52 @@ export const team = [
 
   
   {
-    id: "2",
+    id: "11",
     url: AniketSingh, 
     name: "Aniket Singh",
     role: "Member",
   },
   
   {
-    id: "2",
+    id: "12",
     url: RajenshGarg, 
     name: "Rajnesh Garg",
     role: "Member",
   },
   {
-    id: "2",
+    id: "13",
     url: JatinAgrawal, 
     name: "Jatin Agrawal",
     role: "Member",
   },
    {
-    id: "2",
+    id: "14",
     url: TanishaGupta, 
     name: "Tanisha Gupta",
     role: "Member",
   },
    {
-    id: "2",
+    id: "15",
     url: ShreyanshDubey, 
     name: "Shreyansh Dubey",
     role: "Member",
   },
    {
-    id: "2",
+    id: "16",
     url: YashiSinghal, 
     name: "Yashi Singhal",
     role: "Member",
   },
    {
-    id: "2",
+    id: "17",
     url: AayushDubey, 
     name: "Ayush Dubey",
+    role: "Member",
+  },
+   {
+    id: "18",
+    url: AnshBhardwaj, 
+    name: "Ansh Bhardwaj",
     role: "Member",
   },
   
