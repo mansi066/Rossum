@@ -3,16 +3,16 @@ import { team } from '../constants';
 
 const OurTeamList = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-6">
+    <div className="flex flex-wrap justify-center gap-6 top-1">
       {team.map((member) => (
         <div 
           key={member.id} 
           className="bg-black p-6 rounded-lg text-center 
                      w-[80%] sm:w-[30%] md:w-[20%] lg:w-[15%] xl:w-[10%]
-                     border-2 border-purple-500 shadow-md shadow-purple-500"
+                     border-2 border-red-500 shadow-md shadow-red-500"
         >
           <img 
-            src={member.photo} 
+            src={member.url} 
             alt={member.name} 
             className="w-28 h-28 rounded-full mx-auto object-cover"
           />

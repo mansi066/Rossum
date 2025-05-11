@@ -2,16 +2,17 @@ import { useState } from "react";
 import Section from "./Section";
 import React from "react";
 import Button from "./Button";
+import Heading from "./Heading";
 
 function AboutUs() {
   const [showMore, setShowMore] = useState(false);
 
   return (
     <Section className="max-w-3xl mx-auto text-lg leading-relaxed p-6" id="about">
-      <h1 className="text-4xl font-bold text-center mb-6 cursor-pointer">
-        About Rossum
-      </h1>
-
+      <Heading
+    className="md:max-w-md lg:max-w-2xl top-1"   title="About Us"
+   
+    />
       <p>
         At <strong>Rossum</strong>, we believe coding is more than just a skill—it's a journey, a passion, and a gateway to innovation. 
         Our mission is to bring together coding enthusiasts from all walks of life, creating a dynamic hub where knowledge thrives, 
@@ -19,12 +20,16 @@ function AboutUs() {
       </p>
 
       {/* Read More Button */}
-      <Button
-        className="mt-4 px-4 py-2  t rounded transition" white
-        onClick={() => setShowMore(!showMore)}
-      >
-        {showMore ? "Read Less" : "Read More"}
-      </Button>
+      <div className="flex justify-end">
+  <Button
+    className={`mt-4 px-4 py-2 rounded transition ${
+      showMore ? "text-yellow-500" : " text-green-500"
+    }`} white
+    onClick={() => setShowMore(!showMore)}
+  >
+    {showMore ? "Read Less" : "Read More"}
+  </Button>
+</div>
 
       {showMore && (
         <p className="mt-4">

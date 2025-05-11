@@ -8,7 +8,7 @@ export const Team = () => {
   return (
     <Section className="overflow-hidden"
     id="our-team">
-      <div className="container relative z2">
+      <div className="container relative z2 transition delay-150 duration-300 ease-in-out">
         
          <Heading 
           title="Our Team"

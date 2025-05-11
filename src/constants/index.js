@@ -8,6 +8,25 @@ import {
   file02,
   homeSmile,
   instagram,
+   AdityaSaha,
+  AniketSingh,
+  AnshBhardwaj,
+  AayushDubey,
+  Devojeet,
+  IshaGarg,
+  IshikaGoyal,
+  JatinAgrawal,
+  KapilSharma,
+  Mansi,
+  NamanKaushik,
+  NamanPriyaSharma,
+  RahulKumarGupta,
+  RajenshGarg,
+  ShreyanshDubey,
+  SumanSaha,
+  TanishaGupta,
+  YashiSinghal,
+  YashSharma,
   
   plusSquare,
  
@@ -15,6 +34,7 @@ import {
 
   telegram,
   twitter,
+
 
 } from "../assets";
 import Photo1 from "../assets/Team/Photo1.jpg";
@@ -118,22 +138,126 @@ export const events = [
 export const team = [
   {
     id: "0",
-    photo: "member1.jpg", 
-    name: "member1",
-    role: "",
+    url: SumanSaha, 
+    name: "Suman Saha",
+    role: "Faculty",
+  },
+
+   {
+    id: "1",
+    url: KapilSharma, 
+    name: "Kapil Sharma",
+    role: "Faculty",
+  },
+
+  {
+    id: "3",
+    url: RahulKumarGupta, 
+    name: "Rahul Kumar Gupta",
+    role: "Faculty",
+  },
+ 
+ 
+  {
+    id: "4",
+    url: IshaGarg, 
+    name: "Isha Garg",
+    role: "Secretary",
   },
   {
-    id: "1",
-    photo: "member2.jpg", 
-    name: "Member2",
-    role: "",
+    id: "5",
+    url: Devojeet, 
+    name: "Devojeet",
+    role: "Joint-Secretary",
+  },
+   {
+    id: "2",
+    url: NamanKaushik, 
+    name: "Naman Kaushik",
+    role: "Member",
+  },
+ 
+  
+  {
+    id: "5",
+    url: Mansi, 
+    name: "Mansi",
+    role: "Member",
+  },
+  {
+    id: "6",
+    url: AdityaSaha, 
+    name: "Aditya Saha",
+    role: "Member",
+  },
+ 
+   {
+    id: "2",
+    url: NamanPriyaSharma, 
+    name: "Naman Priya Sharma",
+    role: "Member",
+  },
+ 
+
+   {
+    id: "2",
+    url: IshikaGoyal, 
+    name: "Ishika Goyal",
+    role: "Member",
+  },
+
+  {
+    id: "8",
+    url: YashSharma, 
+    name: "Yash Sharma",
+    role: "Member",
+  },
+
+  
+  {
+    id: "2",
+    url: AniketSingh, 
+    name: "Aniket Singh",
+    role: "Member",
+  },
+  
+  {
+    id: "2",
+    url: RajenshGarg, 
+    name: "Rajnesh Garg",
+    role: "Member",
   },
   {
     id: "2",
-    photo: "member3.jpg", 
-    name: "Member3",
-    role: "",
+    url: JatinAgrawal, 
+    name: "Jatin Agrawal",
+    role: "Member",
   },
+   {
+    id: "2",
+    url: TanishaGupta, 
+    name: "Tanisha Gupta",
+    role: "Member",
+  },
+   {
+    id: "2",
+    url: ShreyanshDubey, 
+    name: "Shreyansh Dubey",
+    role: "Member",
+  },
+   {
+    id: "2",
+    url: YashiSinghal, 
+    name: "Yashi Singhal",
+    role: "Member",
+  },
+   {
+    id: "2",
+    url: AayushDubey, 
+    name: "Ayush Dubey",
+    role: "Member",
+  },
+  
 ];
 
 export const socials = [

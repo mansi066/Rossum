@@ -17,6 +17,7 @@ import chromecast from "./chrome-cast.svg";
 import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
 import background from "./background.jpg";
+import logo from "./Logo.png";
 
 import curve from "./hero/curve.png";
 import heroBackground from "./hero/hero-background.jpg";
@@ -28,6 +29,29 @@ import Photo1 from "./Team/Photo1.jpg";
 import Photo2 from "./Team/Photo2.jpg";
 import Photo3 from "./Team/Photo3.jpg";
 import Photo4 from "./Team/Photo4.jpg";
+
+
+import AdityaSaha from "./Members/AdityaSaha.jpg";
+import AniketSingh from "./Members/AniketSingh.jpg";
+import AnshBhardwaj from "./Members/AnshBhardwaj.jpg";
+import AayushDubey from "./Members/AyushDubey.jpg";
+import Devojeet from "./Members/DevJeet.jpg";
+import IshaGarg from "./Members/IshaGarg.jpg";
+import IshikaGoyal from "./Members/IshikaGoyal.jpg";
+import JatinAgrawal from "./Members/JatinAgrawal.png"
+import KapilSharma from "./Members/KapilSharma.jpg";
+import Mansi from "./Members/Mansi.jpg";
+import NamanKaushik from "./Members/NamanKaushik.jpg";
+import NamanPriyaSharma from "./Members/NamanPriyaSharma.jpg";
+import RahulKumarGupta from "./Members/RahulKumarGupta.jpeg";
+import RajenshGarg from "./Members/RajneshGarg.jpg";
+import ShreyanshDubey from "./Members/ShreyanshDubey.jpg";
+import SumanSaha from "./Members/SumanSaha.jpeg";
+import TanishaGupta from "./Members/TanishaGupta.jpg";
+import YashiSinghal from "./Members/YashiSinghal.jpg";
+import YashSharma from "./Members/YashSharma.jpg";
+
+
 
 
 import notification1 from "./notification/image-1.png";
@@ -53,7 +77,7 @@ export {
   check,
   check2,
   loading1,
- 
+  logo,
   play,
   gradient,
   grid,
@@ -72,6 +96,26 @@ export {
   Photo2,
   Photo3,
   Photo4,
+  AdityaSaha,
+  AniketSingh,
+  AnshBhardwaj,
+  AayushDubey,
+  Devojeet,
+  IshaGarg,
+  IshikaGoyal,
+  JatinAgrawal,
+  KapilSharma,
+  Mansi,
+  NamanKaushik,
+  NamanPriyaSharma,
+  RahulKumarGupta,
+  RajenshGarg,
+  ShreyanshDubey,
+  SumanSaha,
+  TanishaGupta,
+  YashiSinghal,
+  YashSharma,
+  
   background,
   curve,
   lines,
