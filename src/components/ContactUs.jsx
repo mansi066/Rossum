@@ -20,7 +20,7 @@ const ContactUs = () => {
           {contactInfo.map((info, index) => (
             <div
               key={index}
-              className="p-6 bg-gray-800 text-white rounded-lg shadow-lg text-center cursor-pointer transition-transform duration-500 ease-out hover:scale-110 hover:shadow-2xl"
+              className="p-6 bg-gray-800 lg:gap-4 text-white rounded-lg shadow-lg text-center cursor-pointer transition-transform duration-500 ease-out hover:scale-110 hover:shadow-2xl"
             >
               <h3 className="text-lg font-bold">{info.title}</h3>
               <p>{info.email}</p>
