@@ -54,7 +54,7 @@ const Footer = () => {
 
         {/* Community Section */}
         <div>
-          <h3 className="text-md font-semibold text-red-500">COMMUNITY</h3>
+          <h3 className="text-md font-semibold text-rose-500">COMMUNITY</h3>
           <ul className="space-y-2">
             <li><a href="/join-us" className="hover:underline hover:text-green-400">Join Us</a></li>
             <li><a href="/faq" className="hover:underline hover:text-green-400 ">FAQ</a></li>
@@ -64,7 +64,7 @@ const Footer = () => {
 
  {/* Newsletter Subscription */}
  <div className="flex flex-col items-center text-center mb-10">
-        <h1 className="text-2xl font-bold  text-red-500">SUBSCRIBE TO OUR NEWSLETTER</h1>
+        <h1 className="text-2xl font-bold  text-rose-500">SUBSCRIBE TO OUR NEWSLETTER</h1>
         <p className="text-sm">Stay updated with our latest events and announcements.</p>
         <form action="/subscribe" method="post" className="mt-4 w-full max-w-md">
         <input
