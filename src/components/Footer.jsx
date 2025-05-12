@@ -16,21 +16,23 @@ const Footer = () => {
           </p>
           <br />
 
-          {/* Clickable Map Icon */}
-          <div className="mt-4 flex items-center gap-2">
-            <a
-              href="https://www.google.com/maps/place/Jaypee+University+Anoopshahr/@28.3645,78.2643,15z"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-red-500"
-            >
-              <FaMapMarkerAlt className="text-red-500 text-lg cursor-pointer hover:text-red-700 transition-transform duration-300 scale-105" />
-            </a>
-            <p className="text-sm">
-              Jaypee University Anoopshahr,<br />
-              Anoopshahr, Bulandshahr, Uttar Pradesh - 203390, India
-            </p>
-          </div>
+ <div className="mt-4 flex items-center gap-2">
+  {/* Clickable Map Icon */}
+  <a
+    href="https://www.bing.com/maps?mepi=127%7EDirections%7EUnknown%7EDirection_Button&ty=0&rtp=pos.28.339290618896484_78.26226043701172__Jaypee+University+Anoopshahr__e_%7E&mode=d&v=2&sV=1&cp=28.339312%7E78.262259&lvl=14.5"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-red-500"
+  >
+    <FaMapMarkerAlt className="text-red-500 text-lg cursor-pointer hover:text-red-700 transition-transform duration-300 scale-105" />
+  </a>
+
+  {/* Address Text */}
+  <p className="text-sm">
+    Jaypee University Anoopshahr,<br />
+    Bulandshahr, Uttar Pradesh - 203390, India
+  </p>
+</div>
           <br />
         </div>
 
@@ -74,7 +76,7 @@ const Footer = () => {
               className="p-2 rounded w-full max-w-[70%] sm:w-[70%] text-white bg-gray-800 focus:ring-2 focus:ring-red-500"
             />
             <br />
-            <Button className="mt-4 w-[40%] text-center justify-center mx-auto flex bg-red-500 hover:bg-red-700" href="#login" white>
+            <Button className="mt-4 w-[40%] text-center justify-center mx-auto flex " href="#login" white>
               Subscribe
             </Button>
           </form>
