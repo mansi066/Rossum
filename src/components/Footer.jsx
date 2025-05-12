@@ -18,13 +18,23 @@ const Footer = () => {
             with fellow tech enthusiasts.
           </p>
           <br />
-          <div className="mt-4 flex items-center gap-2">
-            <FaMapMarkerAlt className="text-red-500 text-lg" />
-            <p className="text-sm">
-              Jaypee University Anoopshahr,<br />
-              Anoopshahr, Bulandshahr, Uttar Pradesh - 203390, India
-            </p>
-          </div>
+    <div className="mt-4 flex items-center gap-2">
+  {/* Clickable Map Icon */}
+  <a
+    href="https://www.google.com/maps/place/Jaypee+University+Anoopshahr/@28.3645,78.2643,15z"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-red-500"
+  >
+    <FaMapMarkerAlt className="text-red-500 text-lg cursor-pointer hover:text-red-700 transition-colors duration-200" />
+  </a>
+
+  {/* Address Text (Non-clickable) */}
+  <p className="text-sm">
+    Jaypee University Anoopshahr,<br />
+    Anoopshahr, Bulandshahr, Uttar Pradesh - 203390, India
+  </p>
+</div>
           <br />
      
 </div>
