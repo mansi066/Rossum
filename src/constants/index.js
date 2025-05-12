@@ -266,6 +266,14 @@ export const team = [
   
 ];
 
+export const contactInfo = [
+  {id:"0", url:SumanSaha, title: "Rahul Gupta", email: "rahul.gupta@mail.jaypeeu.ac.in", phoneNumber:"+91 82249 46194" },
+  {id:"1", url:RahulKumarGupta, title: "Suman Saha", email: "suman.saha@mail.jaypeeu.ac.in" , phoneNumber:"+91 98057 88220" },
+  {id:"2", url:KapilSharma, title: "Kapil Sharma", email: "kapil.sharma@mail.jaypeeu.ac.in",phoneNumber:"+91 87418 95972" },
+  {id:"3", url:IshaGarg, title: "Isha Garg", email: " 8822103029@mail.jaypeeu.ac.in ",phoneNumber:"+91 70786 58044" },
+  {id:"4", url:Devojeet, title: "Devojeet", email: "8823103010@mail.jaypeeu.ac.in ",phoneNumber:"+91 70606 01699" },
+];
+
 export const socials = [
   {
     id: "0",
