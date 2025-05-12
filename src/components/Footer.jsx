@@ -6,111 +6,99 @@ import Button from "./Button";
 
 const Footer = () => {
   return (
-    <Section crosses className="!px-0 !py-10 bg-n-8 text-white">
-     
-
+    <Section crosses className="!px-0 !py-10 bg-gray-900 text-white">
       <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center sm:text-left">
         {/* About Section */}
         <div>
           <h2 className="text-lg font-bold text-red-500">About Us</h2>
           <p className="text-sm">
-            Join Rossum premier tech hub. Learn, grow, and innovate
-            with fellow tech enthusiasts.
+            Join Rossum, the premier tech hub. Learn, grow, and innovate with fellow tech enthusiasts.
           </p>
           <br />
-    <div className="mt-4 flex items-center gap-2">
-  {/* Clickable Map Icon */}
-  <a
-    href="https://www.google.com/maps/place/Jaypee+University+Anoopshahr/@28.3645,78.2643,15z"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-red-500"
-  >
-    <FaMapMarkerAlt className="text-red-500 text-lg cursor-pointer hover:text-red-700 transition-colors duration-200" />
-  </a>
 
-  {/* Address Text (Non-clickable) */}
-  <p className="text-sm">
-    Jaypee University Anoopshahr,<br />
-    Anoopshahr, Bulandshahr, Uttar Pradesh - 203390, India
-  </p>
-</div>
+          {/* Clickable Map Icon */}
+          <div className="mt-4 flex items-center gap-2">
+            <a
+              href="https://www.google.com/maps/place/Jaypee+University+Anoopshahr/@28.3645,78.2643,15z"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-red-500"
+            >
+              <FaMapMarkerAlt className="text-red-500 text-lg cursor-pointer hover:text-red-700 transition-transform duration-300 scale-105" />
+            </a>
+            <p className="text-sm">
+              Jaypee University Anoopshahr,<br />
+              Anoopshahr, Bulandshahr, Uttar Pradesh - 203390, India
+            </p>
+          </div>
           <br />
-     
-</div>
+        </div>
 
         {/* Quick Links Section */}
         <div>
-          <h3 className="text-md font-semibold text-red-500">QUICK LINKS</h3>
+          <h3 className="text-md font-semibold text-red-500">Quick Links</h3>
           <ul className="space-y-2">
-            <li><a href="#home" className="hover:underline hover:text-green-300">Home</a></li>
-            <li><a href="#about" className="hover:underline hover:text-green-300">About Us</a></li>
-            <li><a href="#events" className="hover:underline hover:text-green-300">Events</a></li>
-            <li><a href="#our-team" className="hover:underline hover:text-green-300">Our Team</a></li>
-            <li><a href="#contact-us" className="hover:underline hover:text-green-300">Contact Us</a></li>
+            {["Home", "About Us", "Events", "Our Team", "Contact Us"].map((link, index) => (
+              <li key={index}>
+                <a href={`#${link.toLowerCase().replace(" ", "-")}`} className="hover:underline hover:text-green-300">
+                  {link}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
-
-        {/* Resources Section
-        <div>
-          <h3 className="text-md font-semibold text-purple-600">RESOURCES</h3>
-          <ul className="space-y-2">
-            <li><a href="/blog" className="hover:underline">Blog</a></li>
-            <li><a href="/tutorials" className="hover:underline">Event</a></li>
-            <li><a href="/guides" className="hover:underline">Project</a></li>
-            <li><a href="/tools" className="hover:underline">Resources</a></li>
-          </ul>
-        </div> */}
 
         {/* Community Section */}
         <div>
-          <h3 className="text-md font-semibold text-red-500">COMMUNITY</h3>
+          <h3 className="text-md font-semibold text-red-500">Community</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:underline hover:text-green-400">Join Us</a></li>
-            <li><a href="#" className="hover:underline hover:text-green-400 ">FAQ</a></li>
-            <li><a href="#" className="hover:underline hover:text-green-400">Code of Conduct</a></li>
+            {["Join Us", "FAQ", "Code of Conduct"].map((link, index) => (
+              <li key={index}>
+                <a href="#" className="hover:underline hover:text-green-400">
+                  {link}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
- {/* Newsletter Subscription */}
- <div className="flex flex-col items-center text-center mb-10">
-        <h1 className="text-2xl font-bold  text-red-500">SUBSCRIBE TO OUR NEWSLETTER</h1>
-        <p className="text-sm">Stay updated with our latest events and announcements.</p>
-        <form action="/subscribe" method="post" className="mt-4 w-full max-w-md">
-        <input
-  type="email"
-  name="email"
-  placeholder="Enter your email"
-  className="p-2 rounded w-full max-w-[70%] sm:w-[70%] text-white bg-neutral-900"
-/>
-  <br />
-  <Button className="mt-4 w-[40%] text-center justify-center mx-auto flex" href="#login" white>
-    Subscribe
-</Button>
-</form>
-</div>
-
+        {/* Newsletter Subscription */}
+        <div className="flex flex-col items-center text-center mb-10">
+          <h1 className="text-2xl font-bold text-red-500">Subscribe to Our Newsletter</h1>
+          <p className="text-sm">Stay updated with our latest events and announcements.</p>
+          <form action="/subscribe" method="post" className="mt-4 w-full max-w-md">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              className="p-2 rounded w-full max-w-[70%] sm:w-[70%] text-white bg-gray-800 focus:ring-2 focus:ring-red-500"
+            />
+            <br />
+            <Button className="mt-4 w-[40%] text-center justify-center mx-auto flex bg-red-500 hover:bg-red-700" href="#login" white>
+              Subscribe
+            </Button>
+          </form>
+        </div>
       </div>
 
+      {/* Social Media Links */}
       <h3 className="text-xl font-semibold text-red-500 text-center">Connect with Us</h3>
-<div className="flex justify-center gap-4 mt-4">
-  {socials.map((item) => (
-    <a
-      key={item.id}
-      href={item.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="w-8 h-8 flex items-center justify-center bg-gray rounded-full hover:bg-rose-500 active:bg-gray"
-    >
-      <img src={item.iconUrl} alt={item.title} width={16} />
-    </a>
-  ))}
-</div>
+      <div className="flex justify-center gap-4 mt-4">
+        {socials.map((item) => (
+          <a
+            key={item.id}
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-red-500 transition-all duration-300"
+          >
+            <img src={item.iconUrl} alt={item.title} width={16} />
+          </a>
+        ))}
+      </div>
 
-      <hr className="w-full border-white my-8" />
-      <p className="text-center text-sm">
-        © {new Date().getFullYear()} Rossum. All rights reserved.
-      </p>
+      <hr className="w-full border-gray-500 my-8" />
+      <p className="text-center text-sm">© {new Date().getFullYear()} Rossum. All rights reserved.</p>
     </Section>
   );
 };
