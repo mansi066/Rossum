@@ -12,14 +12,14 @@ const Footer = () => {
       <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center sm:text-left">
         {/* About Section */}
         <div>
-          <h2 className="text-lg font-bold text-rose-500">About Us</h2>
+          <h2 className="text-lg font-bold text-red-500">About Us</h2>
           <p className="text-sm">
             Join Rossum premier tech hub. Learn, grow, and innovate
             with fellow tech enthusiasts.
           </p>
           <br />
           <div className="mt-4 flex items-center gap-2">
-            <FaMapMarkerAlt className="text-rose-500 text-lg" />
+            <FaMapMarkerAlt className="text-red-500 text-lg" />
             <p className="text-sm">
               Jaypee University Anoopshahr,<br />
               Anoopshahr, Bulandshahr, Uttar Pradesh - 203390, India
@@ -31,7 +31,7 @@ const Footer = () => {
 
         {/* Quick Links Section */}
         <div>
-          <h3 className="text-md font-semibold text-rose-500">QUICK LINKS</h3>
+          <h3 className="text-md font-semibold text-red-500">QUICK LINKS</h3>
           <ul className="space-y-2">
             <li><a href="#home" className="hover:underline hover:text-green-300">Home</a></li>
             <li><a href="#about" className="hover:underline hover:text-green-300">About Us</a></li>
@@ -54,7 +54,7 @@ const Footer = () => {
 
         {/* Community Section */}
         <div>
-          <h3 className="text-md font-semibold text-rose-500">COMMUNITY</h3>
+          <h3 className="text-md font-semibold text-red-500">COMMUNITY</h3>
           <ul className="space-y-2">
             <li><a href="/join-us" className="hover:underline hover:text-green-400">Join Us</a></li>
             <li><a href="/faq" className="hover:underline hover:text-green-400 ">FAQ</a></li>
@@ -64,7 +64,7 @@ const Footer = () => {
 
  {/* Newsletter Subscription */}
  <div className="flex flex-col items-center text-center mb-10">
-        <h1 className="text-2xl font-bold  text-rose-500">SUBSCRIBE TO OUR NEWSLETTER</h1>
+        <h1 className="text-2xl font-bold  text-red-500">SUBSCRIBE TO OUR NEWSLETTER</h1>
         <p className="text-sm">Stay updated with our latest events and announcements.</p>
         <form action="/subscribe" method="post" className="mt-4 w-full max-w-md">
         <input
@@ -82,7 +82,7 @@ const Footer = () => {
 
       </div>
 
-      <h3 className="text-xl font-semibold text-rose-500 text-center">Connect with Us</h3>
+      <h3 className="text-xl font-semibold text-red-500 text-center">Connect with Us</h3>
 <div className="flex justify-center gap-4 mt-4">
   {socials.map((item) => (
     <a
