@@ -15,7 +15,7 @@ const ContactUs = () => {
           {contactInfo.map((info, index) => (
             <div
               key={index}
-              className="p-6 bg-gray-800 lg:gap-4 text-white rounded-lg shadow-lg text-center cursor-pointer transition-transform duration-500 ease-out hover:scale-110 hover:shadow-lg hover:shadow-gray-900 "
+              className="p-6 bg-gray-800 text-white rounded-lg shadow-lg text-center cursor-pointer transition-transform duration-500 ease-out hover:scale-110 hover:shadow-lg hover:shadow-gray-900"
             >
               {/* Contact Image */}
               <img
@@ -26,8 +26,22 @@ const ContactUs = () => {
 
               {/* Contact Details */}
               <h3 className="text-lg font-bold">{info.title}</h3>
-              <p>{info.email}</p>
-              <p>{info.phoneNumber}</p>
+              <p>
+                <a
+                  href={`mailto:${info.email}`}
+                  className="text-blue-400 hover:text-blue-600 transition-colors duration-200"
+                >
+                  {info.email}
+                </a>
+              </p>
+              <p>
+                <a
+                  href={`tel:${info.phoneNumber}`}
+                  className="text-green-400 hover:text-green-600 transition-colors duration-200"
+                >
+                  {info.phoneNumber}
+                </a>
+              </p>
             </div>
           ))}
         </div>
