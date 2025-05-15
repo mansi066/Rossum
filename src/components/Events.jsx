@@ -1,10 +1,11 @@
-import React from 'react';
-import Section from './Section';
-import Heading from './Heading';
-import { events } from '../constants';
+import React from "react";
+import Section from "./Section";
+import Heading from "./Heading";
+import { events } from "../constants";
 import Arrow from "../assets/svg/Arrow";
-import { GradientLight } from './design/Events';
-import ClipPath from '../assets/svg/ClipPath';
+import { GradientLight } from "./design/Events";
+import ClipPath from "../assets/svg/ClipPath";
+import { FaCalendarAlt } from "react-icons/fa"; // Import the calendar icon from React Icons
 
 const Events = () => {
   return (
@@ -30,18 +31,19 @@ const Events = () => {
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
                 <h5 className="h2 mb-5">{item.title}</h5>
                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
-                <div className="flex items-center mt-auto">
-                  <img 
-                    src={item.iconUrl}
-                    width={48}
-                    height={48}
-                    alt={item.title} 
-                  />
-                  <p className='ml-auto text-xs font-bold text-n-1 uppercase tracking-wider'>
+
+                {/* Date and Date Icon Section */}
+                <div className="flex items-center gap-2 mb-4 text-n-3">
+                  <FaCalendarAlt className="text-primary text-lg" /> {/* Using React Icons */}
+                  <p className="text-sm font-bold">{item.date}</p>
+                </div>
+
+                {/* <div className="flex items-center mt-auto">
+                  <p className="ml-auto text-xs font-bold text-n-1 uppercase tracking-wider">
                     Explore more
                   </p>
                   <Arrow />
-                </div>
+                </div> */}
               </div>
 
               {item.light && <GradientLight />}

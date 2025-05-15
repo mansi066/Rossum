@@ -89,51 +89,50 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
   },
 ];
 
+
 export const events = [
   {
     id: "0",
-    title: "BootCamp",
-    text: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    backgroundUrl: "./src/assets/benefits/card-1.svg",
-    light:true,
+    title: "Algo Chase",
+    text: " Algo-Chase is more than just a competition—it’s a race against time where teams dive into a world of riddles, code-cracking, and thrilling problem-solving. Whether you're a puzzle enthusiast or a coding expert, this event guarantees excitement, strategy, and a dash of adventure.",
+    light: false,
+    date: "2025-05-16",
   },
   {
     id: "1",
-    title: "Webinar",
-    text: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
-    
+    title: "AWS Workshop",
+    text: "Jaypee University, Anoopshahr is organizing a hands-on AWS Workshop on 29th April 2025 (Offline Mode), led by Dr. Parul Kundra – an AWS Corporate Trainer with 16+ years of experience.",
     light: true,
+    date: "2025-04-29",
   },
-  // {
-  //   id: "2",
-  //   title: "Connect everywhere",
-  //   text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
-  //   backgroundUrl: "./src/assets/benefits/card-3.svg",
-    
-  // },
-  // {
-  //   id: "3",
-  //   title: "Fast responding",
-  //   text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-  //   backgroundUrl: "./src/assets/benefits/card-4.svg",
-    
-  //   light: true,
-  // },
-  // {
-  //   id: "4",
-  //   title: "Ask anything",
-  //   text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-  //   backgroundUrl: "./src/assets/benefits/card-5.svg",
-    
-  // },
-  // {
-  //   id: "5",
-  //   title: "Improve everyday",
-  //   text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-  //   backgroundUrl: "./src/assets/benefits/card-6.svg",
-    
-  // },
+  {
+    id: "2",
+    title: "Python Bootcamp",
+    text: "An intensive 5-day Python Bootcamp Workshop starting from 21st April, designed to build strong foundational programming skills in students through hands-on practice and expert guidance.",
+    light: true,
+    date: "2025-04-21", 
+  },
+  {
+    id: "3",
+    title: "Web wizard Challenge",
+    text: "The Web Wizard Challenge is your ultimate chance to showcase web development skills, problem-solving abilities, and innovative thinking in a competitive yet fun environment",
+    light: false,
+    date: "2025-02-05",
+  },
+  {
+    id: "4",
+    title: "Code Quest",
+    text: "Code Quest: The Ultimate Coding Quiz Challenge.Code Quest was an exhilarating coding quiz competition designed to test participants' technical knowledge, problem-solving skills.",
+    light: false,
+    date: "2024-12-05", 
+  },
+  {
+    id: "5",
+    title: "Tech Talk",
+    text: " A highly engaging technical talk by Prashant Plakhera, Lead System Engineer at Salesforce. He delivered an insightful session on DevOps, AIOps, LLMOps, and Cloud Infrastructure.",
+    light: true,
+    date: "2024-11-23", 
+  },
 ];
 
 export const team = [
