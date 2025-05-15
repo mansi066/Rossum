@@ -34,6 +34,7 @@ import {
 
   telegram,
   twitter,
+  Neha,
 
 
 } from "../assets";
@@ -61,7 +62,7 @@ export const navigation = [
   {
     id: "3",
     title: "Our Team",
-    url: "#our-team",
+    url: "#team",
   },
   {
     id: "4",
@@ -223,42 +224,50 @@ export const team = [
   
   {
     id: "12",
+    url: Neha, 
+    name: "Neha",
+    role: "Member",
+  },
+  
+
+  {
+    id: "13",
     url: RajenshGarg, 
     name: "Rajnesh Garg",
     role: "Member",
   },
   {
-    id: "13",
+    id: "14",
     url: JatinAgrawal, 
     name: "Jatin Agrawal",
     role: "Member",
   },
    {
-    id: "14",
+    id: "15",
     url: TanishaGupta, 
     name: "Tanisha Gupta",
     role: "Member",
   },
    {
-    id: "15",
+    id: "16",
     url: ShreyanshDubey, 
     name: "Shreyansh Dubey",
     role: "Member",
   },
    {
-    id: "16",
+    id: "17",
     url: YashiSinghal, 
     name: "Yashi Singhal",
     role: "Member",
   },
    {
-    id: "17",
+    id: "18",
     url: AayushDubey, 
     name: "Ayush Dubey",
     role: "Member",
   },
    {
-    id: "18",
+    id: "19",
     url: AnshBhardwaj, 
     name: "Ansh Bhardwaj",
     role: "Member",

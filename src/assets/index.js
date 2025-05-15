@@ -43,6 +43,7 @@ import KapilSharma from "./Members/KapilSharma.jpg";
 import Mansi from "./Members/Mansi.jpg";
 import NamanKaushik from "./Members/NamanKaushik.jpg";
 import NamanPriyaSharma from "./Members/NamanPriyaSharma.jpg";
+import Neha from "./Members/Neha.jpg";
 import RahulKumarGupta from "./Members/RahulKumarGupta.jpeg";
 import RajenshGarg from "./Members/RajneshGarg.jpg";
 import ShreyanshDubey from "./Members/ShreyanshDubey.jpg";
@@ -108,6 +109,7 @@ export {
   Mansi,
   NamanKaushik,
   NamanPriyaSharma,
+  Neha,
   RahulKumarGupta,
   RajenshGarg,
   ShreyanshDubey,
