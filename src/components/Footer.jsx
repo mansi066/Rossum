@@ -38,16 +38,24 @@ const Footer = () => {
 
         {/* Quick Links Section */}
         <div>
-          <h3 className="text-md font-semibold text-red-500">Quick Links</h3>
-          <ul className="space-y-2">
-            {["Home", "About Us", "Events", "Our Team", "Contact Us"].map((link, index) => (
-              <li key={index}>
-                <a href={`#${link.toLowerCase().replace(" ", "-")}`} className="hover:underline hover:text-green-300">
-                  {link}
-                </a>
-              </li>
-            ))}
-          </ul>
+         <h3 className="text-md font-semibold text-red-500">Quick Links</h3>
+<ul className="space-y-2">
+  <li>
+    <a href="#home" className="hover:underline hover:text-green-300">Home</a>
+  </li>
+  <li>
+    <a href="#about" className="hover:underline hover:text-green-300">About Us</a>
+  </li>
+  <li>
+    <a href="#events" className="hover:underline hover:text-green-300">Events</a>
+  </li>
+  <li>
+    <a href="#team" className="hover:underline hover:text-green-300">Our Team</a>
+  </li>
+  <li>
+    <a href="#contact-us" className="hover:underline hover:text-green-300">Contact Us</a>
+  </li>
+</ul>
         </div>
 
         {/* Community Section */}
