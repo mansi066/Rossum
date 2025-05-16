@@ -29,6 +29,10 @@ import Photo1 from "./Team/Photo1.jpg";
 import Photo2 from "./Team/Photo2.jpg";
 import Photo3 from "./Team/Photo3.jpg";
 import Photo4 from "./Team/Photo4.jpg";
+import Photo5 from "./Team/Photo5.png";
+import Photo6 from "./Team/Photo6.png";
+import Photo7 from "./Team/Photo7.png";
+
 
 
 import AdityaSaha from "./Members/AdityaSaha.jpg";
@@ -97,6 +101,9 @@ export {
   Photo2,
   Photo3,
   Photo4,
+  Photo5,
+  Photo6,
+  Photo7,
   AdityaSaha,
   AniketSingh,
   AnshBhardwaj,

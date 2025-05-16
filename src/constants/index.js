@@ -42,6 +42,11 @@ import Photo1 from "../assets/Team/Photo1.jpg";
 import Photo2 from "../assets/Team/Photo2.jpg";
 import Photo3 from "../assets/Team/Photo3.jpg";
 import Photo4 from "../assets/Team/Photo4.jpg";
+import Photo5 from "../assets/Team/Photo5.png";
+import Photo6 from "../assets/Team/Photo6.png";
+import Photo7 from "../assets/Team/Photo7.png";
+
+
 
 export const navigation = [
   {
@@ -86,6 +91,15 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
   },
   {
     url: Photo4,
+  },
+  {
+    url: Photo5,
+  },
+  {
+    url: Photo6,
+  },
+  {
+    url: Photo7,
   },
 ];
 
