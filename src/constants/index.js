@@ -4,10 +4,8 @@ import {
   // disc02,
   
   discordBlack,
-  facebook,
   file02,
   homeSmile,
-  instagram,
    AdityaSaha,
   AniketSingh,
   AnshBhardwaj,
@@ -31,9 +29,9 @@ import {
   plusSquare,
  
   searchMd,
-
-  telegram,
-  twitter,
+  linkedin,
+  facebook,
+  instagram,
   Neha,
 
 
@@ -297,34 +295,23 @@ export const contactInfo = [
 ];
 
 export const socials = [
+  
   {
     id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
+    title: "Instagram",
+    iconUrl: instagram,
+    url: "https://www.instagram.com/rossum_jua?igsh=aG9zMHZiNWZ3eHI5",
   },
   {
     id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
+    title: "Linkedin",
+    iconUrl: linkedin,
+    url: "https://www.linkedin.com/in/rossum-jua-454561366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
-  },
-  {
-    id: "4",
     title: "Facebook",
     iconUrl: facebook,
-    url: "#",
+    url: "https://www.facebook.com/share/15nztq6WnR/",
   },
 ];
