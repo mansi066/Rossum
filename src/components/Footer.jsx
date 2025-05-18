@@ -1,10 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import Section from "./Section";
 import { socials } from "../constants";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import Button from "./Button";
+import { db } from "./firebase"; // Ensure firebase.js correctly exports db
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
 const Footer = () => {
+  const [input, setInput] = useState("");
+
+  const inputHandler = (e) => {
+    setInput(e.target.value);
+  };
+
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    if (input) {
+      console.log("Submitting email:", input);
+
+      try {
+        await addDoc(collection(db, "emails"), {
+          email: input,
+          time: serverTimestamp(),
+        });
+        setInput("");
+        alert("Thanks you for subscribing!");
+        console.log(" Email successfully stored in Firestore!");
+      } catch (error) {
+        console.error(" Firestore Error:", error);
+        alert("Subscription failed! Check the console for details.");
+      }
+    } else {
+      alert("Please enter a valid email address.");
+    }
+  };
+
+  
+  
+
+  
   return (
     <Section crosses className="!px-0 !py-10 bg-gray-900 text-white">
       <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center sm:text-left">
@@ -76,15 +110,17 @@ const Footer = () => {
         <div className="flex flex-col items-center text-center mb-10">
           <h1 className="text-2xl font-bold text-red-500">Subscribe to Our Newsletter</h1>
           <p className="text-sm">Stay updated with our latest events and announcements.</p>
-          <form action="/subscribe" method="post" className="mt-4 w-full max-w-md">
+          <form onSubmit={submitHandler} className="mt-4 w-full max-w-md">
             <input
-              type="email"
+              type="email "
               name="email"
+              onChange={inputHandler}
+              value={input}
               placeholder="Enter your email"
               className="p-2 rounded w-full max-w-[70%] sm:w-[70%] text-white bg-gray-800 focus:ring-2 focus:ring-red-500"
             />
             <br />
-            <Button className="mt-4 w-[40%] text-center justify-center mx-auto flex " href="#login" white>
+            <Button className="mt-4 w-[40%] text-center justify-center mx-auto flex " type="submit" white>
               Subscribe
             </Button>
           </form>
