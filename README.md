@@ -21,9 +21,12 @@ Rossum is designed to be the ultimate coding hub that brings students together t
 ✅ Community-driven projects  
 ✅ events section  
 ✅ Contribution opportunities for students  
+✅ **Admin Panel for Content Management**
 
 ## 🛠️ Tech Stack  
 - **Frontend**: React.js, Tailwind CSS  
+- **Backend**: Firebase (Firestore, Authentication)
+- **Admin Panel**: React with role-based access control
 - **Bundler**: Vite  
 - **Version Control**: Git & GitHub  
 
@@ -45,7 +48,66 @@ npm install
 npm run dev
 ```
 
+### **4️⃣ Access Admin Panel**
+Navigate to `/admin.html` or run:
+```sh
+# For admin panel development
+npm run dev
+# Then visit http://localhost:5173/admin.html
+```
+
 Now you're all set to start contributing! 
+
+## 🔐 Admin Panel
+
+### Features
+- **Secure Authentication**: Role-based access control
+- **Events Management**: Create, edit, delete, and reorder events
+- **Team Management**: Manage team member profiles and information
+- **Contact Information**: Update contact details and social media links
+- **Activity Logging**: Track all content changes
+- **Real-time Preview**: See changes before publishing
+- **Mobile Responsive**: Works on all devices
+
+### Admin Credentials
+For demo purposes:
+- **Email**: admin@rossum.com
+- **Password**: password123
+
+### Admin Panel Sections
+
+#### 1. Dashboard
+- Overview of all content statistics
+- Recent activity feed
+- Quick action buttons
+- Upcoming events summary
+
+#### 2. Events Manager
+- Add/Edit/Delete events
+- Drag-and-drop reordering
+- Featured events marking
+- Archive functionality
+- Event filtering (upcoming, featured, archived)
+
+#### 3. Team Manager
+- Add/Edit/Delete team members
+- Department-wise organization
+- Profile image management
+- Contact information handling
+
+#### 4. Contact Manager
+- Update company contact details
+- Social media links management
+- Office hours configuration
+- Contact form settings
+
+### Technical Implementation
+- **Authentication**: Firebase Auth with email/password
+- **Database**: Firestore for real-time data management
+- **State Management**: React Context API
+- **Form Handling**: React Hook Form with validation
+- **UI Components**: Custom components with Tailwind CSS
+- **Drag & Drop**: React Beautiful DND for reordering
 
 ## Contributing Guidelines  
 We welcome contributions from **Coding Hub official students** and any enthusiasts eager to enhance the project.
@@ -82,6 +144,48 @@ Please follow these guidelines to help maintain the quality and organization of 
 - If you raise a duplicate issue, it will be **closed**.
 - Review issues raised by other contributors before raising your own to avoid confusion related to duplicate issues. For example, if someone is working on the Navbar UI and you want to add a hover effect to navbar items, understand that this falls under the existing Navbar UI issue.
 
+## 📁 Project Structure
+
+```
+src/
+├── admin/                 # Admin panel source code
+│   ├── components/        # Admin UI components
+│   ├── context/          # Admin state management
+│   ├── services/         # Admin API services
+│   └── AdminApp.jsx      # Admin app entry point
+├── components/           # Main website components
+├── constants/           # Application constants
+└── assets/             # Static assets
+
+admin.html              # Admin panel entry point
+index.html             # Main website entry point
+```
+
+## 🚀 Deployment
+
+The project supports multiple build targets:
+- **Main Website**: `npm run build` (builds index.html)
+- **Admin Panel**: Included in the same build process
+- **Development**: `npm run dev` serves both applications
+
+## 📝 Admin Panel Documentation
+
+### Authentication Flow
+1. Admin navigates to `/admin.html`
+2. Login with credentials (Firebase Auth)
+3. Access dashboard with role-based permissions
+4. Manage content through intuitive interface
+
+### Data Management
+- **Real-time Updates**: Changes reflect immediately
+- **Backup System**: Automatic backups before changes
+- **Activity Logging**: All actions are tracked
+- **Validation**: Form validation prevents invalid data
+
+### Security Features
+- **Role-based Access**: Only authorized users can access admin panel
+- **Session Management**: Automatic logout on inactivity
+- **Input Validation**: All inputs are validated and sanitized
+- **CSRF Protection**: Built-in protection against common attacks
 
 ---
-
