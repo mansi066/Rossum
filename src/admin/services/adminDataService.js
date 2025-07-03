@@ -25,7 +25,7 @@ class AdminDataService {
     } catch (error) {
       console.error('Error getting events:', error);
       // Return default events if Firestore fails
-      return [
+      return Promise.resolve([
         {
           id: "0",
           title: "Algo Chase",
@@ -38,7 +38,7 @@ class AdminDataService {
           archived: false,
           order: 0
         }
-      ];
+      ]);
     }
   }
 
@@ -87,7 +87,7 @@ class AdminDataService {
     } catch (error) {
       console.error('Error getting team:', error);
       // Return default team if Firestore fails
-      return [
+      return Promise.resolve([
         {
           id: "0",
           name: "Suman Saha",
@@ -99,7 +99,7 @@ class AdminDataService {
           url: "/src/assets/Members/SumanSaha.jpeg",
           order: 0
         }
-      ];
+      ]);
     }
   }
 
@@ -138,7 +138,7 @@ class AdminDataService {
       return this.getDefaultContactInfo();
     } catch (error) {
       console.error('Error getting contact info:', error);
-      return this.getDefaultContactInfo();
+      return Promise.resolve(this.getDefaultContactInfo());
     }
   }
 
