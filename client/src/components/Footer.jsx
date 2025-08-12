@@ -22,9 +22,9 @@ const Footer = () => {
   axios.post('http://localhost:8000/api/website/subscribers/insert', formData)
     .then((res) => {
       console.log(res.data);
-      alert("🎉 Thank you for subscribing to Rossum!\n\nYou're now part of a vibrant tech community. We'll keep you posted on exciting events and updates!");
-      setInput("");         // Clear the input field
-      setSubscribed(true);  // Trigger green styling
+      alert("🎉 Thank you for subscribing to Rossum! We'll keep you posted on exciting events and updates!");
+      setInput("");         
+      setSubscribed(true);  
     })
     .catch((error) => {
       console.error("Subscription error:", error);
