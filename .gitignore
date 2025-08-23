@@ -1,54 +1,54 @@
-# Root-Level ignores
-node_modules/
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-.DS_Store
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-package-lock.json
-yarn.lock
+# # Root-Level ignores
+# node_modules/
+# .env
+# .env.local
+# .env.development.local
+# .env.test.local
+# .env.production.local
+# .DS_Store
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
+# package-lock.json
+# yarn.lock
 
-# Logs
-logs/
-*.log
+# # Logs
+# logs/
+# *.log
 
-# OS-specific
-Thumbs.db
-ehthumbs.db
-Icon?
-Desktop.ini
+# # OS-specific
+# Thumbs.db
+# ehthumbs.db
+# Icon?
+# Desktop.ini
 
-# IDEs
-.vscode/
-.idea/
+# # IDEs
+# .vscode/
+# .idea/
 
-# Build output
-dist/
-build/
+# # Build output
+# dist/
+# build/
 
-# Coverage reports
-coverage/
+# # Coverage reports
+# coverage/
 
-# Vite-specific (used in client)
-client/node_modules/
-client/dist/
-client/.env
+# # Vite-specific (used in client)
+# client/node_modules/
+# client/dist/
+# client/.env
 
-# Tailwind/PostCSS/Vite configs
-tailwind.config.js
-postcss.config.js
-vite.config.js
+# # Tailwind/PostCSS/Vite configs
+# tailwind.config.js
+# postcss.config.js
+# vite.config.js
 
-# Server-side (Express)
-server/node_modules/
-server/.env
-server/uploads/
-server/tmp/
+# # Server-side (Express)
+# server/node_modules/
+# server/.env
+# server/uploads/
+# server/tmp/
 
-# Optional: ignore database dumps
-*.dump
-*.sql
+# # Optional: ignore database dumps
+# *.dump
+# *.sql

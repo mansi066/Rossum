@@ -174,124 +174,55 @@ export const team = [
     id: "3",
     url: IshaGarg, 
     name: "Isha Garg",
-    role: "Secretary",
+    role: "Ex - Secretary",
   },
   {
     id: "4",
     url: Devojeet, 
     name: "Devojeet",
-    role: "Joint-Secretary",
+    role: "Secretary",
   },
-   {
-    id: "5",
-    url: NamanKaushik, 
-    name: "Naman Kaushik",
-    role: "Member-Coordinator",
-  },
- 
-  
+
   {
-    id: "6",
+    id: "5",
     url: Mansi, 
     name: "Mansi",
-    role: "Member",
+    role: "Joint-Secretary",
   },
+
+  {
+    id: "6",
+    url: JatinAgrawal, 
+    name: "Jatin Agrawal",
+    role: "Joint-Secretary",
+  },
+
   {
     id: "7",
     url: AdityaSaha, 
     name: "Adittya Saha",
-    role: "Member",
+    role: "Joint-Secretary",
   },
- 
+
    {
     id: "8",
-    url: NamanPriyaSharma, 
-    name: "Naman Priya Sharma",
-    role: "Member",
+    url: NamanKaushik, 
+    name: "Naman Kaushik",
+    role: "Ex - Member-Coordinator",
   },
  
-
-   {
-    id: "9",
-    url: IshikaGoyal, 
-    name: "Ishika Goyal",
-    role: "Member",
-  },
-
-  {
-    id: "10",
-    url: YashSharma, 
-    name: "Yash Sharma",
-    role: "Member",
-  },
-
-  
-  {
-    id: "11",
-    url: AniketSingh, 
-    name: "Aniket Singh",
-    role: "Member",
-  },
-  
-  {
-    id: "12",
-    url: Neha, 
-    name: "Neha Singh",
-    role: "Member",
-  },
-  
-
-  {
-    id: "13",
-    url: RajenshGarg, 
-    name: "Rajnesh Garg",
-    role: "Member",
-  },
-  {
-    id: "14",
-    url: JatinAgrawal, 
-    name: "Jatin Agrawal",
-    role: "Member",
-  },
-   {
-    id: "15",
-    url: TanishaGupta, 
-    name: "Tanisha Gupta",
-    role: "Member",
-  },
-   {
-    id: "16",
-    url: ShreyanshDubey, 
-    name: "Shreyansh Dubey",
-    role: "Member",
-  },
-   {
-    id: "17",
-    url: YashiSinghal, 
-    name: "Yashi Singhal",
-    role: "Member",
-  },
-   {
-    id: "18",
-    url: AayushDubey, 
-    name: "Ayush Dubey",
-    role: "Member",
-  },
-   {
-    id: "19",
-    url: AnshBhardwaj, 
-    name: "Ansh Bhardwaj",
-    role: "Member",
-  },
+ 
   
 ];
 
 export const contactInfo = [
   {id:"0", url:SumanSaha, title: "Suman Saha", email: "suman.saha@mail.jaypeeu.ac.in" , phoneNumber:"+91 9805788220" },
-  {id:"1", url:RahulKumarGupta, title: "Rahul Gupta", email: "rahul.gupta@mail.jaypeeu.ac.in", phoneNumber:"+91 8224946194" },
-  {id:"2", url:KapilSharma, title: "Kapil Sharma", email: "kapil.sharma@mail.jaypeeu.ac.in",phoneNumber:"+91 8741895972" },
-  {id:"3", url:IshaGarg, title: "Isha Garg", email: " 8822103029@mail.jaypeeu.ac.in ",phoneNumber:"+91 7078658044" },
-  {id:"4", url:Devojeet, title: "Devojeet", email: "8823103010@mail.jaypeeu.ac.in ",phoneNumber:"+91 7060601699" },
+  {id:"1", url:KapilSharma, title: "Kapil Sharma", email: "kapil.sharma@mail.jaypeeu.ac.in",phoneNumber:"+91 8741895972" },
+  {id:"2", url:RahulKumarGupta, title: "Rahul Gupta", email: "rahul.gupta@mail.jaypeeu.ac.in", phoneNumber:"+91 8224946194" },
+  {id:"3", url:Devojeet, title: "Devojeet", email: "8823103010@mail.jaypeeu.ac.in ",phoneNumber:"+91 7060601699" },
+  {id:"4", url:Mansi, title: "Mansi", email: "8823103054@mail.jaypeeu.ac.in", phoneNumber:"+91 7906498160" },
+  {id:"5", url:JatinAgrawal, title: "Jatin Agrawal", email: "8823103020@mail.jaypeeu.ac.in", phoneNumber:"+91 7902022075"},
+  {id:"6", url:AdityaSaha, title: "Aditya Saha", email: "8824209033@mail.jaypeeu.ac.in", phoneNumber:"+91 8167381643"}
 ];
 
 export const socials = [
@@ -306,7 +237,7 @@ export const socials = [
     id: "1",
     title: "Linkedin",
     iconUrl: linkedin,
-    url: "https://www.linkedin.com/in/rossum-jua-454561366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    url: "https://www.linkedin.com/in/rossum-ju-programming-hub-a16308380/",
   },
   {
     id: "2",

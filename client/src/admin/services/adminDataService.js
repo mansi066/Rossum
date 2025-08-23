@@ -1,135 +1,92 @@
-import { 
-  collection, 
-  doc, 
-  addDoc, 
-  updateDoc, 
-  deleteDoc, 
-  getDocs, 
-  getDoc,
-  serverTimestamp,
-  orderBy,
-  query
-} from 'firebase/firestore';
-import { db } from '../../components/firebase';
-
 class AdminDataService {
   // Events
   async getEvents() {
-    try {
-      const q = query(collection(db, 'admin_events'), orderBy('order', 'asc'));
-      const querySnapshot = await getDocs(q);
-      return querySnapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data()
-      }));
-    } catch (error) {
-      console.error('Error getting events:', error);
-      // Return default events if Firestore fails
-      return Promise.resolve([
-        {
-          id: "0",
-          title: "Algo Chase",
-          text: "Algo-Chase is more than just a competition—it's a race against time where teams dive into a world of riddles, code-cracking, and thrilling problem-solving.",
-          date: "2025-05-16",
-          time: "10:00 AM",
-          location: "Main Auditorium",
-          registrationLink: "#",
-          featured: true,
-          archived: false,
-          order: 0
-        }
-      ]);
-    }
+    return Promise.resolve([
+      {
+        id: "0",
+        title: "Algo Chase",
+        text: "Algo-Chase is more than just a competition—it's a race against time where teams dive into a world of riddles, code-cracking, and thrilling problem-solving.",
+        date: "2025-05-16",
+        time: "10:00 AM",
+        location: "Main Auditorium",
+        registrationLink: "#",
+        featured: true,
+        archived: false,
+        order: 0
+      }
+    ]);
   }
 
   async addEvent(eventData) {
-    const docRef = await addDoc(collection(db, 'admin_events'), {
+    return Promise.resolve({
+      id: String(Date.now()),
       ...eventData,
-      createdAt: serverTimestamp(),
-      updatedAt: serverTimestamp(),
+      createdAt: new Date(),
+      updatedAt: new Date(),
       order: Date.now()
     });
-    return { id: docRef.id, ...eventData };
   }
 
   async updateEvent(id, eventData) {
-    const docRef = doc(db, 'admin_events', id);
-    await updateDoc(docRef, {
+    return Promise.resolve({
+      id,
       ...eventData,
-      updatedAt: serverTimestamp()
+      updatedAt: new Date()
     });
-    return { id, ...eventData };
   }
 
   async deleteEvent(id) {
-    const docRef = doc(db, 'admin_events', id);
-    await deleteDoc(docRef);
+    return Promise.resolve({ success: true });
   }
 
   async reorderEvents(events) {
-    const batch = [];
-    events.forEach((event, index) => {
-      const docRef = doc(db, 'admin_events', event.id);
-      batch.push(updateDoc(docRef, { order: index }));
-    });
-    await Promise.all(batch);
+    return Promise.resolve(events.map((event, index) => ({
+      ...event,
+      order: index
+    })));
   }
 
   // Team
   async getTeam() {
-    try {
-      const q = query(collection(db, 'admin_team'), orderBy('order', 'asc'));
-      const querySnapshot = await getDocs(q);
-      return querySnapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data()
-      }));
-    } catch (error) {
-      console.error('Error getting team:', error);
-      // Return default team if Firestore fails
-      return Promise.resolve([
-        {
-          id: "0",
-          name: "Suman Saha",
-          role: "Faculty",
-          department: "Faculty",
-          bio: "Experienced faculty member",
-          email: "suman.saha@mail.jaypeeu.ac.in",
-          phone: "+91 9805788220",
-          url: "/src/assets/Members/SumanSaha.jpeg",
-          order: 0
-        }
-      ]);
-    }
+    return Promise.resolve([
+      {
+        id: "0",
+        name: "Suman Saha",
+        role: "Faculty",
+        department: "Faculty",
+        bio: "Experienced faculty member",
+        email: "suman.saha@mail.jaypeeu.ac.in",
+        phone: "+91 9805788220",
+        url: "/src/assets/Members/SumanSaha.jpeg",
+        order: 0
+      }
+    ]);
   }
 
   async addTeamMember(memberData) {
-    const docRef = await addDoc(collection(db, 'admin_team'), {
+    return Promise.resolve({
+      id: String(Date.now()),
       ...memberData,
-      createdAt: serverTimestamp(),
-      updatedAt: serverTimestamp(),
+      createdAt: new Date(),
+      updatedAt: new Date(),
       order: Date.now()
     });
-    return { id: docRef.id, ...memberData };
   }
 
   async updateTeamMember(id, memberData) {
-    const docRef = doc(db, 'admin_team', id);
-    await updateDoc(docRef, {
+    return Promise.resolve({
+      id,
       ...memberData,
-      updatedAt: serverTimestamp()
+      updatedAt: new Date()
     });
-    return { id, ...memberData };
   }
 
   async deleteTeamMember(id) {
-    const docRef = doc(db, 'admin_team', id);
-    await deleteDoc(docRef);
+    return Promise.resolve({ success: true });
   }
 
   // Contact Info
   async getContactInfo() {
-    // Always return default contact info to avoid permission issues
     return Promise.resolve(this.getDefaultContactInfo());
   }
 
@@ -149,9 +106,7 @@ class AdminDataService {
   }
 
   async updateContactInfo(contactData) {
-    // For now, just return the data without saving to Firestore
-    // This avoids permission issues while maintaining functionality
-    return contactData;
+    return Promise.resolve(contactData);
   }
 }
 
