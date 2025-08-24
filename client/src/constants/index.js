@@ -174,7 +174,7 @@ export const team = [
     id: "3",
     url: IshaGarg, 
     name: "Isha Garg",
-    role: "Ex - Secretary",
+    role: "Ex-Secretary",
   },
   {
     id: "4",
@@ -208,7 +208,7 @@ export const team = [
     id: "8",
     url: NamanKaushik, 
     name: "Naman Kaushik",
-    role: "Ex - Member-Coordinator",
+    role: "Ex-Member-Coordinator",
   },
  
  
